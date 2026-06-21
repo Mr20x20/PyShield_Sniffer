@@ -93,7 +93,7 @@ Expected: both a `🚨 [SCAN ALERT]` and a `🚨 [DOS ALERT]` line, plus a gener
 
 **Terminal 1** (Administrator) — start the sniffer:
 ```bash
-python pyshield_sniffer_v4.py
+python pyshield_sniffer.py
 ```
 
 **Terminal 2** — run the trigger script against a **different device on your LAN** (see note below):
@@ -106,7 +106,7 @@ python trigger_test.py <target_ip> --flood 50  # SYN-flood simulation
 
 ## Configuration
 
-All detection thresholds are constants at the top of `pyshield_sniffer_v4.py`:
+All detection thresholds are constants at the top of `pyshield_sniffer.py`:
 
 | Constant | Default | Meaning |
 |---|---|---|
