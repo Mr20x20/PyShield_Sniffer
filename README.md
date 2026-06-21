@@ -123,13 +123,6 @@ All detection thresholds are constants at the top of `pyshield_sniffer_v4.py`:
 - `save_alert_to_json()` rewrites the entire report file on every alert; fine at this scale, but would need to move to an append-only format (e.g. JSON Lines) for high-throughput production use.
 - Single-host detection only — does not currently correlate activity across multiple sniffer instances or hosts.
 
-## Roadmap / possible next steps
-
-- [ ] Add UDP and ICMP scan detection
-- [ ] Detect stealth scan types (FIN, NULL, XMAS)
-- [ ] Switch alert storage to JSON Lines for append-only performance
-- [ ] Integrate output into a broader Mini SIEM event collector
-
 ## License
 
 MIT — see [LICENSE](LICENSE).
