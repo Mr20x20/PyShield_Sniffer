@@ -46,7 +46,7 @@ pip install scapy --break-system-packages
 Run the sniffer (Administrator/root required):
 
 ```bash
-python pyshield_sniffer_v4.py
+python pyshield_sniffer.py
 ```
 
 It will sit and listen on your default network interface. Detected events print immediately and are written to `port_scan_report.json` in the working directory.
